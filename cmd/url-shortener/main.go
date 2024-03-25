@@ -1,7 +1,13 @@
 package main
 
+import (
+	"urlshortener/internal/config"
+)
+
 func main() {
-	// todo init config (cleanenv)
+	cfg := config.MustLoad()
+
+	_ = cfg
 
 	// todo init logger (slog)
 
